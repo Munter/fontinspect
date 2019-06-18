@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "bin": {
+    "fontinspect": "bin/fontinspect"
+  },
   "scripts": {
     "lint": "eslint .",
     "test": "npm run lint"
