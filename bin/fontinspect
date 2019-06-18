@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+const URL = require('url').URL;
+const pathModule = require('path');
+const [inputUrl, ...args] = process.argv.slice(2);
+
+if (!inputUrl) {
+  console.error(`Usage: ${pathModule.basename(process.argv[1])} https://exampleurl.com`);
+  process.exit(1);
+}
+
+new URL(inputUrl);
+
+console.error(`Inspecting ${inputUrl} font usage...`);
+
+require('../lib/index')(inputUrl);
