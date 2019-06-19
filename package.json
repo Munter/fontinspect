@@ -14,7 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "assetgraph": "^5.9.0",
+    "assetgraph": "^5.10.0",
     "debug": "^4.1.1",
     "lodash.groupby": "^4.6.0",
     "pretty-bytes": "^5.2.0"
